@@ -1,16 +1,38 @@
 # chord_assistant
 
-A new Flutter project.
+基于flutter开发的和弦进行转换工具
 
-## Getting Started
+## 功能实现
 
-This project is a starting point for a Flutter application.
+- 输入（或在给出的和弦中选择）和弦进行
+- 选择原调
+- 选择目标调
+- 点击转换按钮
+- 显示转换后的和弦进行
 
-A few resources to get you started if this is your first Flutter project:
+## 实现思路
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- 使用flutter开发
+- 使用flutter的state管理
+- 使用flutter的动画
+- 使用flutter的布局
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 开发进度
+
+### 输入部分
+- [x] 输入和弦进行
+- [ ] 给出可选择的和弦进行
+- [x] 可以辨别和弦的根音
+- [ ] 可以辨别和弦的类型
+- [ ] 可以辨别和弦的错误
+- [ ] 自动识别字符串中的和弦，不依赖“-”来辨别
+- [x] 选择原调
+- [x] 选择目标调
+
+### 转换部分
+- [x] 点击转换按钮
+- [x] 显示转换后的和弦进行
+
+### 输出部分
+- [ ] 给出转换后的和弦进行
+- [ ] 展示转换后在吉他或键盘上的按法 
