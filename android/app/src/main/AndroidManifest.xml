@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="和弦转换助手"
+        android:label="My Chord Assistant"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

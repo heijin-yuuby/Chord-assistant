@@ -12,24 +12,64 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: '和弦转换助手',
+      title: 'My Chord Assistant',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a purple toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
-        //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
-        // restart instead.
-        //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        primarySwatch: Colors.blue,
+        primaryColor: const Color(0xFF5C6BC0), // 柔和的靛蓝色
+        scaffoldBackgroundColor: const Color(0xFF2C3E50), // 深蓝灰色背景
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF5C6BC0),
+          primary: const Color(0xFF5C6BC0),
+          secondary: const Color(0xFF7986CB),
+          surface: const Color(0xFF34495E), // 深蓝灰色表面
+          background: const Color(0xFF2C3E50), // 深蓝灰色背景
+          onSurface: const Color(0xFFECF0F1), // 浅灰白色文字
+          onBackground: const Color(0xFFECF0F1), // 浅灰白色文字
+        ),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xFF2C3E50),
+          foregroundColor: Color(0xFFECF0F1),
+          elevation: 0,
+        ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: const Color(0xFF5C6BC0),
+            foregroundColor: const Color(0xFFECF0F1),
+            elevation: 0,
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+          ),
+        ),
+        inputDecorationTheme: InputDecorationTheme(
+          filled: true,
+          fillColor: const Color(0xFF34495E),
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(8),
+            borderSide: const BorderSide(color: Color(0xFF5C6BC0)),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(8),
+            borderSide: const BorderSide(color: Color(0xFF5C6BC0)),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(8),
+            borderSide: const BorderSide(color: Color(0xFF7986CB), width: 2),
+          ),
+          labelStyle: const TextStyle(color: Color(0xFFECF0F1)),
+          hintStyle: const TextStyle(color: Color(0xFF95A5A6)),
+        ),
+        cardTheme: CardTheme(
+          color: const Color(0xFF34495E),
+          elevation: 0,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+            side: const BorderSide(color: Color(0xFF5C6BC0)),
+          ),
+        ),
+        textTheme: const TextTheme(
+          bodyLarge: TextStyle(color: Color(0xFFECF0F1)),
+          bodyMedium: TextStyle(color: Color(0xFFECF0F1)),
+          titleLarge: TextStyle(color: Color(0xFFECF0F1)),
+        ),
         useMaterial3: true,
       ),
       home: const HomeScreen(),

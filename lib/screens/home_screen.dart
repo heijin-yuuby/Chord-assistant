@@ -42,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('和弦转换助手'),
+        title: const Text('Chord Assistant'),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
@@ -54,7 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
               TextField(
                 controller: _progressionController,
                 decoration: const InputDecoration(
-                  labelText: '输入和弦进行',
+                  labelText: '输入或选择和弦进行',
                   hintText: '例如: C F G Am 或 C-F-G-Am 或 C,F,G,Am',
                   border: OutlineInputBorder(),
                 ),
@@ -177,6 +177,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
+      child: Text('Hello'),
     );
   }
 
